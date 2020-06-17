@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>Weather Info App</title>
+</head>
+<body>
+    <div class="container">
+     <div class="jumbotron">
+                <h1 class="text-center">Open Weather API Project</h1>
+                <p class="text-center">Search Your Area Weather</p>
+                <hr/>
+            <form class="w-form" id="w-form">
+                <div class="form-group">
+                  <label for="city">City Name</label>
+                  <input type="text" class="form-control" id="city" placeholder="City Name">
+                  </div>
+                <div class="form-group">
+                  <label for="country">Country</label>
+                  <input type="text" class="form-control" id="country" placeholder="Country Name">
+                </div>
+                <button type="submit" class="btn btn-primary">Show Weather Details</button>
+              </form>
+              <hr>
+    </div>
+    <div class="row">
+        <div class="col-md-7 mx-auto">
+            <div class="card bg-success mb-2" style="width: 40rem;">
+                <div class="card-header text-center" id="w-city">
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item text-center">
+                      <img src="" alt=""id="w-icon">
+                      <div class="text-center" id="w-feels"></div>
+                  </li>  
+                  <li class="list-group-item" id="w-temp"></li>
+                  <li class="list-group-item" id="w-pressure"></li>
+                  <li class="list-group-item" id="w-speed"></li>
+                  <li class="list-group-item" id="w-time"></li>
+                  <li class="list-group-item" id="w-sunrise"></li>
+                  <li class="list-group-item" id="w-sunset"></li>
+                  <li class="list-group-item" id="w-hum"></li>
+                </ul>
+              </div>
+        </div>
+    </div>  
+    </div>
+    <script src="./storage.js"></script>
+    <script src="./weather.js"></script>
+    <script src="./ui.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
