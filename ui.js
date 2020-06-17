@@ -30,7 +30,7 @@ class UI{
     }
     static genereteIcon(icon) {
         // console.log(icon);
-        return 'http://openweathermap.org/img/w/' + icon + '.png';
+        return 'https://openweathermap.org/img/w/' + icon + '.png';
     }
     clearField() {
         document.getElementById('city').value = '';
